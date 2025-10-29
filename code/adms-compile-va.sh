@@ -7,119 +7,146 @@
 mkdir -p ../admslibs
 
 cd ./angelov/vacode
-buildxyceplugin angelov.va ../../../admslibs
-buildxyceplugin angelov_gan.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh angelov.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+buildxyceplugin.sh angelov_gan.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
-#buildxyceplugin ../ASMHEMT/vacode/asmhemt.va .
+#buildxyceplugin.sh ../ASMHEMT/vacode/asmhemt.va .
 cd ./bsim4/vacode
-buildxyceplugin bsim4.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh bsim4.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./bsim6/vacode
-buildxyceplugin BSIM6.1.1.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh BSIM6.1.1.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./bsimbulk/vacode
-buildxyceplugin bsimbulk.va ../../../admslibs
-#buildxyceplugin bsimbulk107.va ../../../admslibs
-#buildxyceplugin bsimbulk106.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh bsimbulk.va .
+#buildxyceplugin.sh bsimbulk107.va .
+#buildxyceplugin.sh bsimbulk106.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./bsimcmg/vacode
-buildxyceplugin bsimcmg.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh bsimcmg.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
-#buildxyceplugin bsimimg.va ../../../admslibs
+#buildxyceplugin.sh bsimimg.va .
 cd ./bsimsoi/vacode
-buildxyceplugin bsimsoi.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh bsimsoi.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./diode_cmc/vacode
-buildxyceplugin diode_cmc.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh diode_cmc.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./ekv/vacode
-buildxyceplugin ekv26.va ../../../admslibs
-rm -rfd .libs/
-rm *.la *.log
+buildxyceplugin.sh ekv26.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./ekv3/vacode
-buildxyceplugin ekv3.va ../../../admslibs
-rm -rfd .libs/
-rm *.la *.log
+buildxyceplugin.sh ekv3.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
-#buildxyceplugin ../EPFL-HEMT/vacode/epfl_hemt.va .
-#buildxyceplugin ../fbh_hbt/vacode/fbh_hbt-2_1.va .
-#buildxyceplugin ../fbh_hbt/vacode/fbh_hbt-2_3.va .
+#buildxyceplugin.sh ../EPFL-HEMT/vacode/epfl_hemt.va .
+#buildxyceplugin.sh ../fbh_hbt/vacode/fbh_hbt-2_1.va .
+#buildxyceplugin.sh ../fbh_hbt/vacode/fbh_hbt-2_3.va .
 cd ./hicum0/vacode
-buildxyceplugin hicumL0_v2p0p0.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh hicumL0_v2p0p0.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./hicum2/vacode
-buildxyceplugin hicumL2_v310.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh hicumL2_v310.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
-#buildxyceplugin ../hisim2/vacode/hisim2.va .
-#buildxyceplugin ../hisimhv/vacode242/hisimhv.va .
-#buildxyceplugin ../hisimhv/vacode250/hisimhv.va .
-#buildxyceplugin ../hisimsoi/vacode/hisimsoi.va .
-#buildxyceplugin ../hisimsotb/vacode/hisimsotb.va .
+#buildxyceplugin.sh ../hisim2/vacode/hisim2.va .
+#buildxyceplugin.sh ../hisimhv/vacode242/hisimhv.va .
+#buildxyceplugin.sh ../hisimhv/vacode250/hisimhv.va .
+#buildxyceplugin.sh ../hisimsoi/vacode/hisimsoi.va .
+#buildxyceplugin.sh ../hisimsotb/vacode/hisimsotb.va .
 cd ./IGBT/vacode
-buildxyceplugin igbt3.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh igbt3.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./L-UTSOI/vacode
-buildxyceplugin L_UTSOI_102.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh L_UTSOI_102.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./mextram/vacode504p12p1
-buildxyceplugin bjt504.va ../../../admslibs
-buildxyceplugin bjt504t.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh bjt504.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+buildxyceplugin.sh bjt504t.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./mextram/vacode
-buildxyceplugin bjt505.va ../../../admslibs
-buildxyceplugin bjt505t.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh bjt505.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+buildxyceplugin.sh bjt505t.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./MOSVAR/vacode
-buildxyceplugin mosvar.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh mosvar.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
-#buildxyceplugin ../mvsg/vacode/mvsg_cmc.va .
-#buildxyceplugin ../psp102/vacode/psp102.va .
+#buildxyceplugin.sh ../mvsg/vacode/mvsg_cmc.va .
+#buildxyceplugin.sh ../psp102/vacode/psp102.va .
 cd ./psp103/vacode
-buildxyceplugin juncap200.va ../../../admslibs
-buildxyceplugin psp103.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh juncap200.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+buildxyceplugin.sh psp103.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
-#buildxyceplugin ../r2_cmc/vacode/r2_cmc.va .
-#buildxyceplugin ../r2_cmc/vacode/r2_et_cmc.va .
+#buildxyceplugin.sh ../r2_cmc/vacode/r2_cmc.va .
+#buildxyceplugin.sh ../r2_cmc/vacode/r2_et_cmc.va .
 cd ./r3_cmc/vacode
-buildxyceplugin r3_cmc.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh r3_cmc.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 cd ./vbic/vacode
-buildxyceplugin vbic_1p3.va ../../../admslibs
-rm *.la *.log
-rm -rfd .libs/
+buildxyceplugin.sh vbic_1p3.va .
+rm Makefile .*.adms *.C *.cmake *.log CMake*.txt N_DEV_*.h .*.xml
+rm -rfd CMakeFiles/
+mv *.so ../../../admslibs
 cd ../..
 
 echo done
