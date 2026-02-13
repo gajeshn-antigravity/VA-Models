@@ -1,0 +1,5 @@
+* Load PSP OSDI Models
+* Usage: .include load_psp_models.lib
+
+.osdi /home/gajesh/Antigravity_work/Work/Analog/PSP/code/psp103/vacode103p6/juncap200.osdi
+.osdi /home/gajesh/Antigravity_work/Work/Analog/PSP/code/psp103/vacode103p6/psp103.osdi
